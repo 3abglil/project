@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/signuPage.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+  <div id="hello">
+    <video muted autoplay loop id="vid1">
+      <source src="..//resources/globe1.webm" type="video/mp4">
+    </video>
+  </div>
+  <div id="frm">
+    <form class="myform"action="" method="post" onsubmit="return validate(this)">
+      <h1 id ="Stitle">Sign Up</h1>
+      <div id="cont">
+        
+        <div id="fields">
+         <span id="sname"></span> <input id = "fname"type="text" name="fname" placeholder="First Name" class="flds" ><br><span  id="fname-err"class="err"
+           ></span>
+
+          <span id="slname"></span><input id = "lname"type="text" name="lname " placeholder="Last Name" class="flds"><br><span class="err"
+            id="lname-err"></span>
+            
+          <input id = "username" type="text" name="username" placeholder="Username" class="flds"><br><span class="err"
+            id="userspan"></span>
+
+          <input id = "email" type="email" name="email" placeholder="example@example.dom" class="flds"><br>
+
+
+          <input id = "password" type="password" name="password" placeholder="Password" class="flds"><br><span class="err"
+            id="per"></span>
+
+          <input id = "confirm-password"type="password" name="passconf" placeholder="Confirm Password" class="flds"><br><span class="err"
+            id="cer"></span>
+
+
+          <input type="date" name="dob" class="flds" ><br>
+          <span id="doberr"></span>
+
+
+        </div>
+        <!-- <div id="checks">
+          <input type="checkbox" name="">
+          <input type="radio" name="gender">
+          <input type="radio" name="gender">
+        </div> -->
+           
+       
+          <p id ="log"> Already have an account? <a href="interface.html">Login</a></p>
+        
+      </div>
+      <input type="submit" name="submit" id="sub">
+    </form>
+  </div>
+  <script src="../js/signup.js"></script>
+</body>
+
+</html>
